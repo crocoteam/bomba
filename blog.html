@@ -12,7 +12,11 @@
     <link href="whitepage/css1/style1.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 
-
+    <script>
+  	$(function() {
+  		if (url('?pixel')) Cookies.set('pixel', url('?pixel'), {expires: 30});
+  	});
+  </script>
 </head>
 <body>
 <div class="all">
